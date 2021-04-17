@@ -1,0 +1,39 @@
+.home_page {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 360px) {
+    .container {
+        width: 100% !important;
+        margin: auto !important;
+        padding: .5rem 0 !important;
+    }
+    .jumbo {
+        background-color: transparent !important;
+    }
+    .jumbo h3 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        padding: .5rem 2rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: .7rem 4rem !important;
+    }
+    .jumbo {
+        box-shadow: -5px 10px rgb(224, 224, 224);
+        background-color: white !important;
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 15px;
+        padding: 2rem 1.5rem !important;
+    }
+}
+
