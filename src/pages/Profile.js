@@ -187,7 +187,7 @@ function Profile( { update_user, update_picture, create_item, access, get_my_ite
                                             id="formUsername" defaultValue={currentUser.state} {...register("state",{
                                             required: "This field is required",
                                             minLength: {
-                                                value: 8,
+                                                value: 3,
                                                 message: 'Minimum of 8 character length' 
                                             }
                                             })} placeholder="Did you change your location?" required />

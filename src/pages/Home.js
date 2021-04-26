@@ -27,7 +27,8 @@ function Home({isAuthenticated }) {
                     </p>
                     <p>
                         <Button variant="primary">
-                            <a href="cypherspot.dev/#contact"
+                            <a href="https://www.cypherspot.dev/#contact"
+                            rel="noreferrer" target="_blank"
                                 className="nav-link text-white"
                             >Contact Us</a>
                         </Button>

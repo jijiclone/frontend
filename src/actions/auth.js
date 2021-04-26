@@ -117,6 +117,7 @@ export const update_picture = (data) => async dispatch => {
         const config = {
             headers: {
                 'Authorization': `JWT ${localStorage.getItem("access")}`,
+                "Content-Type": "multipart/form-data"
             }
         };
         const formdata = new FormData()
