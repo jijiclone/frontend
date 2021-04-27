@@ -117,7 +117,6 @@ export const update_picture = (data) => async dispatch => {
         const config = {
             headers: {
                 'Authorization': `JWT ${localStorage.getItem("access")}`,
-                "Content-Type": "multipart/form-data"
             }
         };
         const formdata = new FormData()
@@ -174,11 +173,6 @@ export const login = (data) => async dispatch => {
 };
 
 export const signup = (data) => async dispatch => {
-    const config = {
-        headers: {
-            "Content-Type": "multipart/form-data"
-        }
-    };
 
     const formdata = new FormData()
     formdata.append("email", data.email)
@@ -195,7 +189,7 @@ export const signup = (data) => async dispatch => {
     const body = formdata;
     alert("Creating account please wait a minute.")
     try {
-        const res = await axios.post(`${process.env.REACT_APP_API_URL}/auth/users/`, body, config);
+        const res = await axios.post(`${process.env.REACT_APP_API_URL}/auth/users/`, body);
         dispatch({
             type: REGISTRATION_SUCCESS,
             payload: res.data
